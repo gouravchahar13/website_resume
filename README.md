@@ -1,1 +1,0 @@
-just basic resume website
