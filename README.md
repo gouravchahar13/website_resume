@@ -1,2 +1,1 @@
-# website_resume
-basic
+just basic resume website
