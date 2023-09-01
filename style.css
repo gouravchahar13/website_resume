@@ -1,131 +1,135 @@
 :root {
-    --primary-color: #9c339c;
-    --secondary-color: #1b206e;
-    
-  }
+  --primary-color: #9c339c;
+  --secondary-color: #1b206e;
+}
 *{/* To make it in a box*/
-    box-sizing: border-box;
-    margin: 0;
-    padding:0;
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
 }
 body{
-    background-color:  #fff;
-    color:black;
-    font-family:"Sawarabi Gothic",sans-serif ;
+  background-color:  #fff;
+  color:black;
+  font-family:"Sawarabi Gothic",sans-serif ;
 }
-/*nav bar styling*/
+/*nav bar styling begins*/
 header a{
-    text-decoration: none;
+  text-decoration: none;
 }
 header{
+padding:0 20px;
 background-color: #fff;
 height:10vh;
 width:100vw;
 display: flex;
-justify-content:space-between;
 border :1px solid rgb(15, 15, 15);
-z-index: 20;
 }
 .toggle {
-    top: 0;
-    margin-left:0;
-    width: 60px;
-    height: 9.8vh;
-    background: var(--primary-color) url(images/menu.png);
-    background-size: 30px;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 20;
-    cursor: pointer;
-  }
-  .toggle.active {
-    background: var(--primary-color) url(images/close.png);
-    background-size: 25px;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .navigation {
-    position: fixed;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    z-index: 15;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  position: relative;
+  top: 0;
+  left:-2vw;
+  width: 60px;
+  height: 10vh;
+  background: var(--primary-color) url(images/menu.png);
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 20;
+  cursor: pointer;
   
-  .navigation.active {
-    left: 0;
-  
+}
+.toggle.active {
+  background: var(--primary-color) url(images/close.png);
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation.active {
+  left: 0;
+
+}
+.navigation ul li {
+  margin-top:20px;
+  list-style: none;
+  text-align: center;
+}
+
+.navigation ul li a {
+  font-size: 2.2rem;
+  color: #111;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.navigation ul li a:hover {
+  color: var(--primary-color);
+  transform: scale(0.5);
+  transition: 0.2s;
+}
+.navigation ul li:hover {
+  color: var(--primary-color);
+  transform: scale(1.5);
+  transition: 0.2s;
+}
+.navigation .social-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation .social-bar a {
+  display: inline-block;
+  transform: scale(0.5);
+}
+
+.navigation .email-icon {
+  position: absolute;
+  bottom: 20px;
   }
-  .navigation ul li {
-    margin-top:20px;
-    list-style: none;
-    text-align: center;
-  }
-  
-  .navigation ul li a {
-    font-size: 2.2rem;
-    color: #111;
-    text-decoration: none;
-    font-weight: 300;
-  }
-  
-  .navigation ul li a:hover {
-    color: var(--primary-color);
-    transform: scale(0.5);
-    transition: 0.2s;
-  }
-  .navigation ul li:hover {
-    color: var(--primary-color);
-    transform: scale(1.5);
-    transition: 0.2s;
-  }
-  .navigation .social-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .navigation .social-bar a {
-    display: inline-block;
-    transform: scale(0.5);
-  }
-  
-  .navigation .email-icon {
-    position: absolute;
-    bottom: 20px;
-    }
 #brand {
-    font-weight: bold;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    z-index: 20;
-    margin-left: -20vw;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  z-index: 20;
+  margin-right: 20vw;
 }
 #brand a{
-    color:rgb(164, 11, 235);
+  color:rgb(164, 11, 235);
+}
+#img{
+  z-index:20;
 }
 #img img{
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    padding: 13px;
-    height: 10vh;
-    width: 100px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 13px;
+  height: 10vh;
+  width: 100px;
+  margin-right: 20vw;
 }
-#img:hover{
-    transform: scale(1.5);
-    transition: 0.2s;
+#img img:hover{
+  transform: scale(1.5);
+  transition: 0.2s;
 }
 nav ul{
 list-style: none;
@@ -135,22 +139,21 @@ align-items: center;
 justify-content: space-around;
 }
 nav ul a{
-    color:black;
+  color:black;
 }
 
 nav ul li{
 margin-top: 20px;
 height:7vh;
-margin-left: 0px;
+margin-left: 30px;
 background-color: transparent;
 border-radius: 5px;
 padding:5px 8px;
-margin-right: 30px;
 }
 nav ul li:hover {
-    transform: scale(1.3);
-    transition: 0.2s;
-    border-bottom: 5px solid rgb(223, 72, 236);
+  transform: scale(1.3);
+  transition: 0.2s;
+  border-bottom: 5px solid rgb(223, 72, 236);
 
 }
 /*nav bar styling ends*/
@@ -163,11 +166,9 @@ main{
 .Qualification_box{
   height:30vh;
   width:100%;
-  
   z-index: 20;
 }
 .Qualification_box center{
-  
   font-size: 30px;
 }
 .e_box{
@@ -298,10 +299,7 @@ border-radius: 20px;}
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
+
 
 /*image slider end*/
 
@@ -345,4 +343,96 @@ footer .f_box{
     width:20px;
     margin-left: 30px;
     cursor:pointer;
+}
+
+/*Laptops*/
+@media screen and (min-width:1000px) {
+  .toggle{
+    display: none;
+  }
+  header{
+    width:100vw;
+  }
+}
+/*tablets*/
+@media screen and (min-width:600px) and (max-width:1000px){
+  nav{
+    display: none;
+  }
+  .toggle{
+    
+    margin-left: -1vw;
+  }
+  #brand{
+    margin-left: 25vw;
+    margin-right: 0;
+  }
+  #img img:hover{
+    display:none;
+  }
+  header{
+    width:100vw;
+  }
+  .content{
+    font-size: 15px;
+    margin-left: 13px;
+}
+.e_box span{
+    font-size: 19px;
+}
+.content ul li{
+    margin-left: 50px;
+}
+.info ul li{
+    font-size: 15px;
+}
+progress{
+    width: 20vw;
+    align-self: center;
+}
+
+}
+/*mopbile phones*/
+@media screen and (max-width:450px){
+  nav{
+    display: none;
+  }
+  .toggle{
+    position:fixed;
+    
+  }
+  #brand{
+    margin-left: 20vw;
+    margin-right: 0;
+    font-size: 13px;
+  }
+  #img{
+    margin-right: 10vw;
+  }
+  #img img:hover{
+    display:none;
+  }
+  .navigation ul li a{
+    font-size: small;
+  }
+  header{
+    width:100vw;
+  }
+  .numbertext {font-size: 11px}
+  .content{
+    font-size: 10px;
+    margin-left: 3px;
+}
+.e_box span{
+    font-size: 15px;
+}
+.content ul li{
+    margin-left: 30px;
+}
+.info ul li{
+    font-size: 13px;
+}
+progress{
+    width: 20vw;
+}
 }
