@@ -23,6 +23,8 @@ height:10vh;
 width:100vw;
 display: flex;
 border :1px solid rgb(15, 15, 15);
+position: sticky;
+
 }
 .toggle {
   position: relative;
@@ -72,6 +74,7 @@ border :1px solid rgb(15, 15, 15);
   color: #111;
   text-decoration: none;
   font-weight: 300;
+  align-self: flex-end;
 }
 
 .navigation ul li a:hover {
@@ -175,7 +178,7 @@ main{
   height:15vh;
   width:60%;
   border: 1px solid black;
-  margin-top: 30px;
+  margin-bottom: 30px;
   margin-left: 20%;
   display: flex;
   align-items: center;
@@ -352,6 +355,7 @@ footer .f_box{
   }
   header{
     width:100vw;
+    
   }
 }
 /*tablets*/
